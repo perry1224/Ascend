@@ -97,7 +97,7 @@ a.nav-link:focus::after {
 }
 
 /* Main text */
-h1, .paragraph {
+h1, #paragraph {
   opacity: 0;
 }
 

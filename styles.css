@@ -254,13 +254,14 @@ container {
   color: #fff;
   margin-top: 40px; /* Adjust the margin-top to move the h4 lower */
   margin-bottom: 6em; /* Add some spacing between the h4 and the rest of the content */
+
   position: relative;
   z-index: 3;
   top: 20%
 }
 
 .blockone .whoami {
-  margin-bottom: 5em;
+  margin-bottom: 2em;
 }
 
 
@@ -268,7 +269,6 @@ container {
 .blocktwo {
   flex: 1; /* Allow the blocktwo section to take up available space and grow */
   padding: 20px; /* Optional: Add padding for spacing between blocks */
-
 }
 
 .aboutbutton {
@@ -294,4 +294,38 @@ container {
 
 h2 {
   font-weight: 500;
+}
+
+.aboutmesocial img {
+  transition: transform 0.3s; /* Add a transition for smooth hover effect */
+}
+
+.aboutmesocial img:hover {
+  transform: scale(1.1); /* Apply scale transform to expand the individual icon on hover */
+}
+
+/* Responsive styles using media queries */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack the elements vertically on smaller screens */
+    align-items: flex-start; /* Align elements to the left on smaller screens */
+  }
+  
+  .blockone {
+    width: 100%; /* Make the blockone take full width on smaller screens */
+    margin: 2em 0; /* Adjust the margin on smaller screens */
+  }
+  
+  .profilepic {
+    position: relative; /* Change the position back to relative on smaller screens */
+    top: 0; /* Reset the top position on smaller screens */
+    left: 0; /* Reset the left position on smaller screens */
+    transform: none; /* Reset the transform on smaller screens */
+    margin-bottom: 1em; /* Add some spacing below the profile picture on smaller screens */
+    border: none; /* Remove the border on smaller screens */
+  }
+  
+  .blockone h4 {
+    top: 0; /* Reset the top position on smaller screens */
+  }
 }

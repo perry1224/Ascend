@@ -117,7 +117,6 @@ h1, .paragraph {
 /* CONTACT FORM */
 .container{
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,6 +216,11 @@ textarea::-webkit-scrollbar-thumb{
 
 /* ABOUT ME PAGE */
 
+container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .blockone {
   text-align: center;
@@ -227,6 +231,7 @@ textarea::-webkit-scrollbar-thumb{
   width: 300px;
   margin-top: 8em;
   margin-left: 20em;
+  margin-right: 30px;
   z-index:2;
 }
 
@@ -258,3 +263,35 @@ textarea::-webkit-scrollbar-thumb{
   margin-bottom: 5em;
 }
 
+
+
+.blocktwo {
+  flex: 1; /* Allow the blocktwo section to take up available space and grow */
+  padding: 20px; /* Optional: Add padding for spacing between blocks */
+
+}
+
+.aboutbutton {
+  background-color: white;
+  border: 3px solid;
+  border-color: rgb(2, 151, 219);
+  padding: 10px 20px;
+  display: inline;
+  border-top-left-radius: 20px; /* Rounded top-left corner */
+  border-top-right-radius: 20px; /* Rounded top-right corner */
+  border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
+  border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
+ 
+}
+
+
+.aboutbutton:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+h2 {
+  font-weight: 500;
+}

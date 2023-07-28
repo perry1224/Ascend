@@ -35,5 +35,5 @@ const header = document.getElementById('header');
     input.addEventListener('keyup', handleKeyup);
   });
 
-
+  
   AOS.init();

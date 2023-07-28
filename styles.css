@@ -261,15 +261,6 @@ textarea::-webkit-scrollbar-thumb{
   }
 }
 
-
-
-
-
-
-
-
-
-
 /* ABOUT ME PAGE */
 
 container {
@@ -419,3 +410,96 @@ h2 {
   
 }
 
+/* SERVICES */
+.service-container {
+  display: flex;
+  justify-content: center; /* Center the cards horizontally */
+  gap: 20px; /* Add some spacing between the cards */
+}
+
+.restring-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 150px; /* Adjust the size of the circle background */
+  height: 150px; /* Adjust the size of the circle background */
+  border-radius: 50%; /* Make it a circle */
+  background-color:rgb(2, 151, 219);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mini-icon {
+  position: relative;
+  z-index: 1; /* Put the racket icon in front of the circle */
+  filter: brightness(0) invert(1); 
+}
+
+/* Define the spinning animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply the animation on hover */
+.mini-icon:hover {
+  animation: spin 0.5s linear; /* Spin the racket icon on hover */
+}
+
+/* Adjust the size and color of the racket icon when hovering */
+.mini-icon:hover {
+  filter: brightness(0) invert(1); /* Change the color to white when hovering */
+}
+
+.restring-card,
+.coffee-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff; /* Add a background color for the card */
+  padding: 20px; /* Add some padding for spacing */
+  border-radius: 10px; /* Add rounded corners for the card */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+  max-width: 300px; /* Limit the card width if needed */
+}
+
+h2 {
+  margin-bottom: 10px; /* Add some spacing between the heading and the paragraph */
+  display:flex;
+  justify-content: center;
+  font-weight:bolder;
+
+}
+
+p {
+  text-align: center; /* Center the paragraph text */
+}
+
+.div-space {
+  margin-top: 250px
+}
+
+/* Styles for mobile devices (max-width: 600px) */
+@media only screen and (max-width: 600px) {
+  .service-container {
+    flex-direction: column; /* Stack the cards as columns on smaller screens */
+    align-items: center;
+  }
+  
+  .restring-card,
+  .coffee-card {
+    width: 100%; /* Make the cards take up the full width on smaller screens */
+  }
+
+  .div-space {
+    margin-top: 100px
+  }
+}

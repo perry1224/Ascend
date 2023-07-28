@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
 }
 
 body, html {
   height: 100%;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Montserrat', sans-serif;
   position: relative;
 }
 
@@ -216,7 +216,8 @@ textarea::-webkit-scrollbar-thumb{
 
 /* ABOUT ME PAGE */
 
-container {
+/* Common styles for both mobile and larger screens */
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -232,7 +233,7 @@ container {
   margin-top: 8em;
   margin-left: 8em;
   margin-right: 30px;
-  z-index:2;
+  z-index: 2;
 }
 
 .profilepic {
@@ -252,19 +253,17 @@ container {
 
 .blockone h4 {
   color: #fff;
+  font-weight: bolder;
   margin-top: 40px; /* Adjust the margin-top to move the h4 lower */
   margin-bottom: 6em; /* Add some spacing between the h4 and the rest of the content */
-
   position: relative;
   z-index: 3;
-  top: 20%
+  top: 20%;
 }
 
 .blockone .whoami {
   margin-bottom: 2em;
 }
-
-
 
 .blocktwo {
   flex: 1; /* Allow the blocktwo section to take up available space and grow */
@@ -281,9 +280,7 @@ container {
   border-top-right-radius: 20px; /* Rounded top-right corner */
   border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
   border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
- 
 }
-
 
 .aboutbutton:hover {
   cursor: pointer;
@@ -293,7 +290,7 @@ container {
 }
 
 h2 {
-  font-weight: 500;
+  font-weight: bolder;
 }
 
 .aboutmesocial img {
@@ -304,28 +301,29 @@ h2 {
   transform: scale(1.1); /* Apply scale transform to expand the individual icon on hover */
 }
 
-/* Responsive styles using media queries */
-@media (max-width: 768px) {
+/* ABOUT ME PAGE : Media query for iPhone 12 and similar mobile devices */
+@media (max-width: 414px) {
   .container {
-    flex-direction: column; /* Stack the elements vertically on smaller screens */
-    align-items: flex-start; /* Align elements to the left on smaller screens */
+    flex-direction: column; /* Stack the sections on top of each other */
+    align-items: center; /* Center content horizontally */
   }
-  
+
   .blockone {
-    width: 100%; /* Make the blockone take full width on smaller screens */
-    margin: 2em 0; /* Adjust the margin on smaller screens */
+    margin-left: 2em; /* Remove left margin to center the blockone section */
+    margin-right: 2em;
+    height: auto;
   }
-  
-  .profilepic {
-    position: relative; /* Change the position back to relative on smaller screens */
-    top: 0; /* Reset the top position on smaller screens */
-    left: 0; /* Reset the left position on smaller screens */
-    transform: none; /* Reset the transform on smaller screens */
-    margin-bottom: 1em; /* Add some spacing below the profile picture on smaller screens */
-    border: none; /* Remove the border on smaller screens */
-  }
-  
+
   .blockone h4 {
-    top: 0; /* Reset the top position on smaller screens */
+    top: 120px; /* Adjust the margin-top to move the h4 lower on mobile devices */
+  
   }
+
+  .aboutbutton {
+    display:flex;
+    justify-content: center;
+    margin-left: 5.5em;
+  
+  }
+
 }

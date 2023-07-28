@@ -185,6 +185,7 @@ h1, #paragraph {
   max-width: 600px;
   min-height: 80px;
   max-height: 80px;
+  resize:vertical
 }
 
 textarea::-webkit-scrollbar{
@@ -214,10 +215,64 @@ textarea::-webkit-scrollbar-thumb{
   opacity: 0.7;
 }
 
+@media only screen and (max-width: 600px) {
+  .container form {
+    width: 90%; /* Adjust the width for smaller screens */
+    height: auto;
+  }
+
+  .container form input {
+    width: 100%; /* Adjust the width to fill the available space */
+    margin: 5px 0; /* Add margin to separate the elements vertically */
+  }
+
+  .container form #my-form-button {
+ 
+    margin-right: 0; /* Remove margin-right */
+  }
+
+  .container form #coffee,
+  .container form #mobile,
+  .container form #firstName,
+  .container form #email {
+    width: 80%; /* Adjust the width to fill the available space */
+    margin-left: 0; /* Align coffee and mobile to the left */
+
+  }
+
+  .container form textarea{
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width:300px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+    resize:vertical
+  }
+
+  .container form h4 {
+    text-align: center; /* Center the "Your Message" heading under the media query */
+  }
+}
+
+
+
+
+
+
+
+
+
+
 /* ABOUT ME PAGE */
 
-/* Common styles for both mobile and larger screens */
-.container {
+container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,7 +288,7 @@ textarea::-webkit-scrollbar-thumb{
   margin-top: 8em;
   margin-left: 8em;
   margin-right: 30px;
-  z-index: 2;
+  z-index:2;
 }
 
 .profilepic {
@@ -258,12 +313,14 @@ textarea::-webkit-scrollbar-thumb{
   margin-bottom: 6em; /* Add some spacing between the h4 and the rest of the content */
   position: relative;
   z-index: 3;
-  top: 20%;
+  top: 20%
 }
 
 .blockone .whoami {
   margin-bottom: 2em;
 }
+
+
 
 .blocktwo {
   flex: 1; /* Allow the blocktwo section to take up available space and grow */
@@ -280,7 +337,9 @@ textarea::-webkit-scrollbar-thumb{
   border-top-right-radius: 20px; /* Rounded top-right corner */
   border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
   border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
+ 
 }
+
 
 .aboutbutton:hover {
   cursor: pointer;
@@ -290,8 +349,18 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 h2 {
-  font-weight: bolder;
+  font-weight:bolder;
 }
+
+.storytext {
+  text-align: justify; /* Justify the text to align both left and right edges */
+}
+
+.notable-players {
+  list-style-type: disc; /* Set the list style type to disc (bullets) */
+  padding-left: 2em; /* Add some left padding to the list to create space between bullet and text */
+}
+
 
 .aboutmesocial img {
   transition: transform 0.3s; /* Add a transition for smooth hover effect */
@@ -301,9 +370,9 @@ h2 {
   transform: scale(1.1); /* Apply scale transform to expand the individual icon on hover */
 }
 
-/* ABOUT ME PAGE : Media query for iPhone 12 and similar mobile devices */
+/* Responsive styles using media queries */
 @media (max-width: 414px) {
-  .container {
+  container {
     flex-direction: column; /* Stack the sections on top of each other */
     align-items: center; /* Center content horizontally */
   }
@@ -326,4 +395,27 @@ h2 {
   
   }
 
+  .blockone h4 {
+    top: 120px; /* Adjust the margin-top to move the h4 lower on mobile devices */
+  
+  }
+
+  .aboutbutton {
+    display:flex;
+    justify-content: center;
+    margin-left: 5.5em;
+  
+  } 
+
+  .storytext {
+    text-align: justify; /* Justify the text to align both left and right edges */
+  }
+  
+  .notable-players {
+    list-style-type: disc; /* Set the list style type to disc (bullets) */
+    padding-left: 2em; /* Add some left padding to the list to create space between bullet and text */
+  }
+  
+  
 }
+

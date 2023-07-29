@@ -189,12 +189,16 @@ h1, #paragraph {
   resize:vertical
 }
 
+textarea::placeholder {
+  color: lightgray
+}
+
 textarea::-webkit-scrollbar{
   width: 1em;
 }
 
 textarea::-webkit-scrollbar-thumb{
-  background-color: rgba(194,194,194,0.713);
+  background-color: rgba(194, 194, 194, 0.797);
 }
 
 .container form #my-form-button{

@@ -546,13 +546,21 @@ p {
 
 .panel {
   padding: 0 18px;
-  width: 60%;
   background-color: white;
+  width: 70%;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
+  text-align: left; /* Add this to align the paragraph left */
 }
 
+.panel p {
+  text-align: left; /* Align the paragraph left within the panel */
+}
+
+.accordion + .panel {
+  margin-top: 5px;
+}
 @media only screen and (max-width: 600px) {
   .service-container {
     flex-direction: column; /* Stack the cards as columns on smaller screens */
@@ -562,4 +570,9 @@ p {
     .accordion {
       width: 90%
     }
+
+    .panel {
+      width: 90%;
+    }
+  
 }

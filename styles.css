@@ -132,6 +132,7 @@ h1, #paragraph {
   background-color: rgb(2,151,219);
   backdrop-filter: blur(10px);
   flex-wrap: wrap;
+  margin-bottom:10%;
 }
 
 .container form h2{
@@ -219,6 +220,7 @@ textarea::-webkit-scrollbar-thumb{
   .container form {
     width: 90%; /* Adjust the width for smaller screens */
     height: auto;
+    margin-bottom: 200px;
   }
 
   .container form input {

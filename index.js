@@ -35,5 +35,28 @@ const header = document.getElementById('header');
     input.addEventListener('keyup', handleKeyup);
   });
 
+
+
+  // FAQ
+
+  var acc = document.getElementsByClassName("accordion");
+  var i;
   
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        panel.style.maxHeight = panel.scrollHeight + "px";
+      } 
+    });
+  }
+// Check if AOS object exists before calling AOS.init()
+if (typeof AOS !== 'undefined') {
   AOS.init();
+} else {
+  // If AOS is not defined yet, you can either wait for it to load or handle the situation accordingly
+  console.warn('AOS library is not loaded yet. Make sure you have included the AOS library.');
+}

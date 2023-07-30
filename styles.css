@@ -334,7 +334,7 @@ container {
   border-top-right-radius: 20px; /* Rounded top-right corner */
   border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
   border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
- 
+  transition: transform 0.1s ease-out
 }
 
 
@@ -343,6 +343,7 @@ container {
   background-color: black;
   color: white;
   border: none;
+  transform: scale(1.1);
 }
 
 h2 {

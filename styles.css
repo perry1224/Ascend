@@ -614,7 +614,7 @@ p {
   min-width: 100%;
   object-fit: cover;
   cursor: pointer;
-  filter: grayscale(100%);
+  filter: grayscale(80%);
   transition: .35s linear;
 }
 

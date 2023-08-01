@@ -670,7 +670,7 @@ p {
   }
 
   .gallery img {
-    filter: grayscale(80); /* Remove grayscale filter on mobile */
+    filter: grayscale(80%); /* Remove grayscale filter on mobile */
   }
 
   .scroll-up {

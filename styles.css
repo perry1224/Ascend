@@ -390,7 +390,7 @@ h2 {
   .aboutbutton {
     display:flex;
     justify-content: center;
-    margin-left: 5.5em;
+    margin-right: 4em
   
   }
 
@@ -659,6 +659,17 @@ p {
   opacity: 0.8;
 }
 
+.creator {
+  margin-left:46%;
+  display: flex;
+  align-items: center;
+  font-size:smaller
+}
+
+.creator img {
+  margin-bottom: 10px;
+}
+
 
 /* Add a media query to stack the images in a column on mobile screens and show the scroll-up button */
 @media only screen and (max-width: 414px) {
@@ -667,6 +678,10 @@ p {
     flex-direction: column;
     width: 300px;
     --f: 1.2;
+  }
+
+  .creator  {
+    margin-left: 35%
   }
 
   .gallery img {
@@ -714,3 +729,4 @@ p {
     display: none;
   }
 }
+

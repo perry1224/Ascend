@@ -87,14 +87,12 @@ a.hire-button {
   background-color: #007bff;
   color: #fff;
   text-decoration: none;
-  border-radius: 5px;
   transition: transform 0.3s ease; /* Add smooth transition effect */
 }
 
 
 a.hire-button:hover {
   transform: translateY(-5px);
-  background-color: rgb(2,151,219);
   color: #fff;
   transform: translateY(-5px);
 }
@@ -586,3 +584,56 @@ p {
     }
   
 }
+
+/* GALLERY */
+
+.gallery-body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+
+}
+
+.gallery {
+  --s: 300px; /* control the size */
+  --g: 10px;  /* control the gap */
+  --f: 1.5;   /* control the scale factor */
+  
+  display: grid;
+  gap: var(--g);
+  width: calc(3*var(--s) + 2*var(--g));
+  aspect-ratio: 1;
+  grid-template-columns: repeat(3,auto);
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  filter: grayscale(80%);
+  transition: .35s linear;
+}
+
+.gallery img:hover{
+  filter: grayscale(0);
+  width:  calc(var(--s)*var(--f));
+  height: calc(var(--s)*var(--f));
+}
+
+/* Add a media query to stack the images in a column on mobile screens */
+@media only screen and (max-width: 600px) {
+  .gallery {
+  display:flex;
+  flex-direction: column;
+  width: 300px;
+  }
+}
+
+
+
+
+

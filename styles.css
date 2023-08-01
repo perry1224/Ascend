@@ -614,7 +614,7 @@ p {
   min-width: 100%;
   object-fit: cover;
   cursor: pointer;
-  filter: grayscale(80%);
+  filter: grayscale(100%);
   transition: .35s linear;
 }
 
@@ -666,10 +666,11 @@ p {
     display: flex;
     flex-direction: column;
     width: 300px;
+    --f: 1.2;
   }
 
   .gallery img {
-    filter: grayscale(0); /* Remove grayscale filter on mobile */
+    filter: grayscale(80); /* Remove grayscale filter on mobile */
   }
 
   .scroll-up {
@@ -704,5 +705,12 @@ p {
   .scroll-up:hover {
     cursor: pointer;
     opacity: 0.8;
+  }
+}
+
+/* Add a media query to hide the scroll-up button on desktop screens */
+@media only screen and (min-width: 768px) {
+  .scroll-up {
+    display: none;
   }
 }

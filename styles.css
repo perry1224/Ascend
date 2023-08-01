@@ -80,16 +80,19 @@ a.nav-link:focus::after {
 
 
 
-.hire-button {
-  padding: 5px 10px;
-  margin-top: 10px;
-  border: none;
-  cursor: pointer;
-  box-shadow: solid 10px 10px 10px rgba(0, 0, 0.5, 0.3); /* Add shadow to the right and bottom */
+a.hire-button {
+  /* Add your button-like styles here */
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
   transition: transform 0.3s ease; /* Add smooth transition effect */
 }
 
-.hire-button:hover {
+
+a.hire-button:hover {
   transform: translateY(-5px);
   background-color: rgb(2,151,219);
   color: #fff;

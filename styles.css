@@ -335,7 +335,8 @@ container {
   border-top-right-radius: 20px; /* Rounded top-right corner */
   border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
   border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
-  transition: transform 0.1s ease-out
+  transition: transform 0.1s ease-out;
+  margin-top: 3em;
 }
 
 
@@ -387,12 +388,6 @@ h2 {
   
   }
 
-  .aboutbutton {
-    display:flex;
-    justify-content: center;
-    margin-right: 4em
-  
-  }
 
   .blockone h4 {
     top: 120px; /* Adjust the margin-top to move the h4 lower on mobile devices */
@@ -402,7 +397,7 @@ h2 {
   .aboutbutton {
     display:flex;
     justify-content: center;
-    margin-left: 5.5em;
+    margin-left: 6em;
   
   } 
 

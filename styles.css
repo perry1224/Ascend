@@ -620,20 +620,89 @@ p {
 
 .gallery img:hover{
   filter: grayscale(0);
-  width:  calc(var(--s)*var(--f));
-  height: calc(var(--s)*var(--f));
+  transform: scale(var(--f)); 
+  z-index: 10;
 }
 
-/* Add a media query to stack the images in a column on mobile screens */
-@media only screen and (max-width: 600px) {
+.scroll-up {
+  display: block;
+  position: fixed;
+  right: 0.5%;
+  bottom: 3%;
+  cursor: pointer;
+  z-index: 9999; /* Ensure the arrow is on top of other elements */
+}
+
+/* Additional styles for the up-arrow image */
+.up-arrow {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Add transition for smooth animation */
+#scroll-up {
+  position: fixed;
+  bottom: -50px;
+  right: 20px;
+  transition: bottom 0.3s;
+  cursor: pointer;
+  z-index: 9999; /* Ensure the arrow is on top of other elements */
+}
+
+/* Show the scroll-up button when it needs to appear */
+#scroll-up.show {
+  bottom: 20px;
+}
+
+.scroll-up:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+
+/* Add a media query to stack the images in a column on mobile screens and show the scroll-up button */
+@media only screen and (max-width: 414px) {
   .gallery {
-  display:flex;
-  flex-direction: column;
-  width: 300px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .gallery img {
+    filter: grayscale(0); /* Remove grayscale filter on mobile */
+  }
+
+  .scroll-up {
+    position: fixed;
+    right: 0.5%;
+    bottom: 3%;
+    cursor: pointer;
+    z-index: 9999; /* Ensure the arrow is on top of other elements */
+  }
+
+  /* Additional styles for the up-arrow image */
+  .up-arrow {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  /* Add transition for smooth animation */
+  #scroll-up {
+    position: fixed;
+    bottom: -50px;
+    right: 20px;
+    transition: bottom 0.3s;
+    cursor: pointer;
+    z-index: 9999; /* Ensure the arrow is on top of other elements */
+  }
+
+  /* Show the scroll-up button when it needs to appear */
+  #scroll-up.show {
+    bottom: 20px;
+  }
+
+  .scroll-up:hover {
+    cursor: pointer;
+    opacity: 0.8;
   }
 }
-
-
-
-
-

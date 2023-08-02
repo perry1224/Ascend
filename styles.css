@@ -593,7 +593,7 @@ p {
 .gallery {
   --s: 300px; /* control the size */
   --g: 10px;  /* control the gap */
-  --f: 1.5;   /* control the scale factor */
+  --f: 2.5;   /* control the scale factor */
   
   display: grid;
   gap: var(--g);
@@ -669,10 +669,10 @@ p {
 /* Add a media query to stack the images in a column on mobile screens and show the scroll-up button */
 @media only screen and (max-width: 414px) {
   .gallery {
-    display: flex;
-    flex-direction: column;
+    display:inherit;
+    grid-template-rows: repeat(3, 1fr);
     width: 300px;
-    --f: 1.2;
+    --f: 2;
   }
 
   .creator  {

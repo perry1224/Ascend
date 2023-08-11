@@ -15,7 +15,7 @@ const header = document.getElementById('header');
     setTimeout(() => {
  
       fadeInElement(paragraph);
-    }, 1000);
+    },  1500);
 
   // Get all elements with the class "js-input"
   const inputs = document.querySelectorAll('.js-input');

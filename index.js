@@ -1,3 +1,4 @@
+
 const header = document.getElementById('header');
     const paragraph = document.getElementById('paragraph');
 
@@ -82,3 +83,4 @@ window.addEventListener("scroll", () => {
     scrollUpIcon.classList.remove("show");
   }
 });
+

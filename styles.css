@@ -13,22 +13,18 @@ body, html {
   position: relative;
 }
 
-/* The hero image */
+
 .hero-image {
-/* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+
 background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/court.jpg");
-
-/* Set a specific height */
 height: 100%;
-
-/* Position and center the image to scale nicely on all screens */
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
 position: relative;
 }
 
-/* Place text in the middle of the image */
+
 .hero-text {
 text-align: center;
 position: absolute;
@@ -81,13 +77,13 @@ a.nav-link:focus::after {
 
 
 a.hire-button {
-  /* Add your button-like styles here */
+ 
   display: inline-block;
   padding: 10px 20px;
   background-color: #007bff;
   color: #fff;
   text-decoration: none;
-  transition: transform 0.3s ease; /* Add smooth transition effect */
+  transition: transform 0.3s ease; 
 }
 
 
@@ -104,7 +100,7 @@ h1, #paragraph {
 
 
 /* FOOTER */
-/* footer styling */
+
 #footer {
   background-color:#fff;
   text-align: center;
@@ -223,27 +219,27 @@ textarea::-webkit-scrollbar-thumb{
 
 @media only screen and (max-width: 600px) {
   .container form {
-    width: 90%; /* Adjust the width for smaller screens */
+    width: 90%;
     height: auto;
     margin-bottom: 200px;
   }
 
   .container form input {
-    width: 100%; /* Adjust the width to fill the available space */
-    margin: 5px 0; /* Add margin to separate the elements vertically */
+    width: 100%; 
+    margin: 5px 0; 
   }
 
   .container form #my-form-button {
  
-    margin-right: 0; /* Remove margin-right */
+    margin-right: 0; 
   }
 
   .container form #coffee,
   .container form #mobile,
   .container form #firstName,
   .container form #email {
-    width: 80%; /* Adjust the width to fill the available space */
-    margin-left: 0; /* Align coffee and mobile to the left */
+    width: 80%; 
+    margin-left: 0; 
 
   }
 
@@ -264,7 +260,7 @@ textarea::-webkit-scrollbar-thumb{
   }
 
   .container form h4 {
-    text-align: center; /* Center the "Your Message" heading under the media query */
+    text-align: center; 
   }
 }
 
@@ -292,11 +288,11 @@ container {
 .profilepic {
   border-radius: 50%;
   position: absolute;
-  top: -100px; /* Move the profilepic slightly above .blockone */
-  left: 50%; /* Center the profilepic horizontally */
-  transform: translateX(-50%); /* Center the profilepic horizontally */
-  z-index: 2; /* Set a higher z-index to make it appear above .blockone */
-  border: 2px solid white; /* Optional: Add a border to profilepic for better visibility */
+  top: -100px;
+  left: 50%; 
+  transform: translateX(-50%); 
+  z-index: 2;
+  border: 2px solid white; 
 }
 
 .whoami {
@@ -307,8 +303,8 @@ container {
 .blockone h4 {
   color: #fff;
   font-weight: bolder;
-  margin-top: 40px; /* Adjust the margin-top to move the h4 lower */
-  margin-bottom: 6em; /* Add some spacing between the h4 and the rest of the content */
+  margin-top: 40px; 
+  margin-bottom: 6em; 
   position: relative;
   z-index: 3;
   top: 20%
@@ -321,8 +317,8 @@ container {
 
 
 .blocktwo {
-  flex: 1; /* Allow the blocktwo section to take up available space and grow */
-  padding: 20px; /* Optional: Add padding for spacing between blocks */
+  flex: 1;
+  padding: 20px; 
 }
 
 .aboutbutton {
@@ -331,10 +327,10 @@ container {
   border-color: rgb(2, 151, 219);
   padding: 10px 20px;
   display: inline;
-  border-top-left-radius: 20px; /* Rounded top-left corner */
-  border-top-right-radius: 20px; /* Rounded top-right corner */
-  border-bottom-left-radius: 20px; /* Rounded bottom-left corner */
-  border-bottom-right-radius: 20px; /* Rounded bottom-right corner */
+  border-top-left-radius: 20px; 
+  border-top-right-radius: 20px; 
+  border-bottom-left-radius: 20px; 
+  border-bottom-right-radius: 20px;
   transition: transform 0.1s ease-out;
   margin-top: 3em;
 }
@@ -353,44 +349,44 @@ h2 {
 }
 
 .storytext {
-  text-align: justify; /* Justify the text to align both left and right edges */
+  text-align: justify; 
 }
 
 .notable-players {
-  list-style-type: disc; /* Set the list style type to disc (bullets) */
-  padding-left: 2em; /* Add some left padding to the list to create space between bullet and text */
+  list-style-type: disc; 
+  padding-left: 2em; 
 }
 
 
 .aboutmesocial img {
-  transition: transform 0.3s; /* Add a transition for smooth hover effect */
+  transition: transform 0.3s; 
 }
 
 .aboutmesocial img:hover {
-  transform: scale(1.1); /* Apply scale transform to expand the individual icon on hover */
+  transform: scale(1.1); 
 }
 
 /* Responsive styles using media queries */
 @media (max-width: 414px) {
   container {
-    flex-direction: column; /* Stack the sections on top of each other */
-    align-items: center; /* Center content horizontally */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .blockone {
-    margin-left: 2em; /* Remove left margin to center the blockone section */
+    margin-left: 2em;
     margin-right: 2em;
     height: auto;
   }
 
   .blockone h4 {
-    top: 120px; /* Adjust the margin-top to move the h4 lower on mobile devices */
+    top: 120px; 
   
   }
 
 
   .blockone h4 {
-    top: 120px; /* Adjust the margin-top to move the h4 lower on mobile devices */
+    top: 120px; 
   
   }
 
@@ -402,12 +398,12 @@ h2 {
   } 
 
   .storytext {
-    text-align: justify; /* Justify the text to align both left and right edges */
+    text-align: justify; 
   }
   
   .notable-players {
     list-style-type: disc; /* Set the list style type to disc (bullets) */
-    padding-left: 2em; /* Add some left padding to the list to create space between bullet and text */
+    padding-left: 2em; 
   }
   
   
@@ -416,8 +412,8 @@ h2 {
 /* SERVICES */
 .service-container {
   display: flex;
-  justify-content: center; /* Center the cards horizontally */
-  gap: 20px; /* Add some spacing between the cards */
+  justify-content: center; 
+  gap: 20px; 
 }
 
 .service-card {
@@ -435,9 +431,9 @@ h2 {
 }
 
 .icon {
-  width: 150px; /* Adjust the size of the circle background */
-  height: 150px; /* Adjust the size of the circle background */
-  border-radius: 50%; /* Make it a circle */
+  width: 150px; 
+  height: 150px; 
+  border-radius: 50%; 
   background-color:rgb(2, 151, 219);
   display: flex;
   justify-content: center;
@@ -465,7 +461,7 @@ h2 {
   animation: spin 0.5s linear; /* Spin the racket icon on hover */
 }
 
-/* Adjust the size and color of the racket icon when hovering */
+
 .mini-icon:hover {
   filter: brightness(0) invert(1); /* Change the color to white when hovering */
 }
@@ -476,15 +472,15 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff; /* Add a background color for the card */
-  padding: 20px; /* Add some padding for spacing */
-  border-radius: 10px; /* Add rounded corners for the card */
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
-  max-width: 300px; /* Limit the card width if needed */
+  background-color: #fff; 
+  padding: 20px; 
+  border-radius: 10px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); 
+  max-width: 300px; 
 }
 
 h2 {
-  margin-bottom: 10px; /* Add some spacing between the heading and the paragraph */
+  margin-bottom: 10px; 
   display:flex;
   justify-content: center;
   font-weight:bolder;
@@ -492,23 +488,23 @@ h2 {
 }
 
 p {
-  text-align: center; /* Center the paragraph text */
+  text-align: center; 
 }
 
 .div-space {
   margin-top: 250px
 }
 
-/* Styles for mobile devices (max-width: 600px) */
+
 @media only screen and (max-width: 600px) {
   .service-container {
-    flex-direction: column; /* Stack the cards as columns on smaller screens */
+    flex-direction: column; 
     align-items: center;
   }
   
   .restring-card,
   .coffee-card {
-    width: 100%; /* Make the cards take up the full width on smaller screens */
+    width: 100%; 
   }
 
   .div-space {
@@ -563,11 +559,11 @@ p {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  text-align: left; /* Add this to align the paragraph left */
+  text-align: left;
 }
 
 .panel p {
-  text-align: left; /* Align the paragraph left within the panel */
+  text-align: left; 
 }
 
 .accordion + .panel {
@@ -575,7 +571,7 @@ p {
 }
 @media only screen and (max-width: 600px) {
   .service-container {
-    flex-direction: column; /* Stack the cards as columns on smaller screens */
+    flex-direction: column; 
     align-items: center;
 
   }
@@ -597,23 +593,23 @@ p {
   right: 0.5%;
   bottom: 3%;
   cursor: pointer;
-  z-index: 9999; /* Ensure the arrow is on top of other elements */
+  z-index: 9999; 
 }
 
-/* Additional styles for the up-arrow image */
+
 .up-arrow {
   width: 3rem;
   height: 3rem;
 }
 
-/* Add transition for smooth animation */
+
 #scroll-up {
   position: fixed;
   bottom: -50px;
   right: 20px;
   transition: bottom 0.3s;
   cursor: pointer;
-  z-index: 9999; /* Ensure the arrow is on top of other elements */
+  z-index: 9999; 
 }
 
 /* Show the scroll-up button when it needs to appear */
@@ -638,7 +634,6 @@ p {
 }
 
 
-/* Add a media query to stack the images in a column on mobile screens and show the scroll-up button */
 @media only screen and (max-width: 414px) {
  
 
@@ -652,26 +647,23 @@ p {
     right: 0.5%;
     bottom: 3%;
     cursor: pointer;
-    z-index: 9999; /* Ensure the arrow is on top of other elements */
+    z-index: 9999; 
   }
 
-  /* Additional styles for the up-arrow image */
   .up-arrow {
     width: 3rem;
     height: 3rem;
   }
 
-  /* Add transition for smooth animation */
   #scroll-up {
     position: fixed;
     bottom: -50px;
     right: 20px;
     transition: bottom 0.3s;
     cursor: pointer;
-    z-index: 9999; /* Ensure the arrow is on top of other elements */
+    z-index: 9999; 
   }
 
-  /* Show the scroll-up button when it needs to appear */
   #scroll-up.show {
     bottom: 20px;
   }
@@ -682,7 +674,6 @@ p {
   }
 }
 
-/* Add a media query to hide the scroll-up button on desktop screens */
 @media only screen and (min-width: 768px) {
   .scroll-up {
     display: none;
